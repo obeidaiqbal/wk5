@@ -44,6 +44,10 @@
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 20px
   }
+  .grid > div:nth-child(3n) {
+    grid-column: auto;
+    width: inherit;
+  }
   .gallery {
     justify-content: space-between;
   }
@@ -51,7 +55,7 @@
     flex: 1 1 200px;
   }
   .grid > div:hover {
-    box-shadow: 0 4px 20px rgba(210, 5, 5, 0.2);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   }
 }
 
